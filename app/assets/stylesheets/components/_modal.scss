@@ -1,0 +1,37 @@
+.stimulus-modal-btn {
+  padding: 10px 15px;
+  background-color: #4816d3;
+  color: white;
+  border-radius: 8px;
+  border: none;
+}
+
+.stimulus-modal-container {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 30vh;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  overflow: auto;
+}
+
+.stimulus-modal-content {
+  border-radius: 8px;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close-modal-icon {
+  color: #aaaaaa;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}

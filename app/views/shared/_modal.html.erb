@@ -1,0 +1,19 @@
+<div class='container' data-controller="modal" data-action="keyup@window->modal#closeWithKeyboard">
+  <!-- Outside of the modal to trigger the opening -->
+  <button
+    class="stimulus-modal-btn"
+    data-action="click->modal#openModal"
+  >
+    <%= modal_btn_content %>
+  </button>
+
+  <!-- The Modal itself -->
+  <div class="stimulus-modal-container" data-modal-target="modal">
+
+    <!-- Modal content -->
+    <div class="stimulus-modal-content">
+      <span class="close-modal-icon" data-action="click->modal#closeModal">&times;</span>
+      <%= capture(&block) %>
+    </div>
+  </div>
+</div>
